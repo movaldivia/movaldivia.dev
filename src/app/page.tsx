@@ -18,7 +18,7 @@ import { type Metadata } from 'next'
 import portraitImage from '@/images/portrait.jpg'
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Home',
   description: 'I’m Mauricio, a software engineer and entrepreneur.',
 }
 
