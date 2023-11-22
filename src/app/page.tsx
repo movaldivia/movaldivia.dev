@@ -5,28 +5,9 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
+import { GitHubIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
 
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import { formatDate } from '@/lib/formatDate'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoWallState from '@/images/wallstate.png'
 import logoAbstract from '@/images/abstract.jpeg'
 import logoReity from '@/images/reity.png'
@@ -116,16 +97,24 @@ function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <AboutSocialLink href="#" icon={TwitterIcon}>
+            <AboutSocialLink
+              href="https://twitter.com/movaldivia_dev"
+              icon={TwitterIcon}
+            >
               Follow on Twitter
             </AboutSocialLink>
-            {/* <AboutSocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </AboutSocialLink> */}
-            <AboutSocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <AboutSocialLink
+              href="https://github.com/movaldivia"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </AboutSocialLink>
-            <AboutSocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <AboutSocialLink
+              href="https://www.linkedin.com/in/mauricio-valdivia-monzon-85b366147/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </AboutSocialLink>
             <AboutSocialLink
@@ -325,33 +314,6 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -379,22 +341,17 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/movaldivia_dev"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            {/* <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            /> */}
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/movaldivia"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/mauricio-valdivia-monzon-85b366147/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
