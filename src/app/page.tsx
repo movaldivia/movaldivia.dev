@@ -68,7 +68,7 @@ function AboutSocialLink({
 
 function About() {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className="mt-16 sm:mt-48">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
@@ -82,8 +82,8 @@ function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Mauricio Sharp. I live in New York City, where I design the
-            future.
+            I’m Mauricio Valdivia. For me programming is the tool which I can
+            change the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -401,25 +401,14 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      <Photos />
       <Container className="mt-24 md:mt-28">
         <Resume />
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div> */}
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
-            {/* <Resume /> */}
-          </div>
-        </div>
       </Container>
-      <About />
+      {/* <Photos /> */}
+
       <SimpleLayout
         title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        intro="I’ve worked on tons of projects over the years but these are the ones that I’m most proud of."
       >
         <ul
           role="list"
@@ -447,6 +436,7 @@ export default async function Home() {
           ))}
         </ul>
       </SimpleLayout>
+      <About />
     </>
   )
 }
