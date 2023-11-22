@@ -8,11 +8,10 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Mauricio Valdivia',
-    default:
-      'Mauricio Valdivia - Software designer, founder, and amateur astronaut',
+    default: 'Mauricio Valdivia - Software engineer and entrepreneur',
   },
   description:
-    'I’m Mauricio, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m Mauricio, a software engineer and entrepreneur. I’m the co-founder and ex-CTO of WallState.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

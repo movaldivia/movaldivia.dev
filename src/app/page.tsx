@@ -19,8 +19,7 @@ import portraitImage from '@/images/portrait.jpg'
 
 export const metadata: Metadata = {
   title: 'About',
-  description:
-    'I’m Mauricio Valdivia. I live in New York City, where I design the future.',
+  description: 'I’m Mauricio, a software engineer and entrepreneur.',
 }
 
 function AboutSocialLink({
