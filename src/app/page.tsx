@@ -28,6 +28,10 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoWallState from '@/images/wallstate.png'
+import logoAbstract from '@/images/abstract.jpeg'
+import logoReity from '@/images/reity.png'
+import logoOpenSurvey from '@/images/opensurvey.png'
 
 import { type Metadata } from 'next'
 
@@ -126,11 +130,11 @@ function About() {
               Follow on LinkedIn
             </AboutSocialLink>
             <AboutSocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:mauricio.valdivia.dev@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              mauricio.valdivia.dev@gmail.com
             </AboutSocialLink>
           </ul>
         </div>
@@ -141,39 +145,25 @@ function About() {
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'WallState',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Invest in US real estate from one dollar and from Latam. More than ten thousands users.',
+    link: { href: 'https://www.wallstate.cl/', label: 'wallstate.cl' },
+    logo: logoWallState,
   },
   {
-    name: 'Animaginary',
+    name: 'Reity',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Buy percentages of Chile real estate using blockchain technology.',
+    link: { href: 'https://www.reity.cl/', label: 'reity.cl' },
+    logo: logoReity,
   },
   {
-    name: 'HelioStream',
+    name: 'OpenSurvey',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Open source alternative to Google Forms. Create forms easily in less than five minutes.',
+    link: { href: 'https://opensurvey.co/', label: 'opensurvey.co' },
+    logo: logoOpenSurvey,
   },
 ]
 
@@ -313,7 +303,12 @@ function Role({ role }: { role: Role }) {
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+        <Image
+          src={role.logo}
+          alt=""
+          className="h-7 w-7 rounded-full"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -341,35 +336,18 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      company: 'WallState',
+      title: 'Co-founder | CTO | Software Engineer ',
+      logo: logoWallState,
+      start: '2021',
+      end: '2023',
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Abstract',
+      title: 'Software Engineer',
+      logo: logoAbstract,
+      start: '2020',
+      end: '2021',
     },
   ]
 
@@ -500,7 +478,7 @@ export default async function Home() {
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="h-8 w-8 rounded-full"
                   unoptimized
                 />
               </div>
