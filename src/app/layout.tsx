@@ -7,9 +7,9 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Mauricio Sharp',
+    template: '%s - Mauricio Valdivia',
     default:
-      'Mauricio Sharp - Software designer, founder, and amateur astronaut',
+      'Mauricio Valdivia - Software designer, founder, and amateur astronaut',
   },
   description:
     'I’m Mauricio, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
