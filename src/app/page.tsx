@@ -10,6 +10,7 @@ import { GitHubIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoWallState from '@/images/wallstate.png'
 import logoAbstract from '@/images/abstract.jpeg'
+import logoAnotherAcquisition from '@/images/anotheracquisition.png'
 import logoReity from '@/images/reity.png'
 import logoOpenSurvey from '@/images/opensurvey.png'
 
@@ -48,7 +49,7 @@ function AboutSocialLink({
 
 function About() {
   return (
-    <Container className="mt-16 sm:mt-48">
+    <Container className="mt-16 sm:mt-24">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
@@ -68,16 +69,15 @@ function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>Hi!</p>
             <p>
-              I&apos;m Mauricio, a passionate software engineer. I have
-              programmed many different things, from a simple hello world to
-              smart contracts. What I love about programming is that you
-              don&apos;t have limits in your creation. You need a laptop with an
-              internet connection and your own time.
+              I&apos;m Mauricio, a passionate software engineer specialized in
+              frontend development. I have programmed many different things,
+              from a simple hello world to smart contracts. What I love about
+              programming is that you don&apos;t have limits in your creation.
+              You need a laptop with an internet connection and your own time.
             </p>
             <p>
               Over my years of startup environment experience, I have learned a
-              lot of things; I consider myself a generalist who can adapt
-              quickly. I can develop an MVP with good enough UX/UI, frontend,
+              lot of things. I can develop an MVP with great UX/UI, frontend,
               backend, DevOps, ads, and more. Very customer-focused.
             </p>
             <p>
@@ -88,12 +88,12 @@ function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <AboutSocialLink
+            {/* <AboutSocialLink
               href="https://twitter.com/movaldivia_dev"
               icon={TwitterIcon}
             >
               Follow on Twitter
-            </AboutSocialLink>
+            </AboutSocialLink> */}
             <AboutSocialLink
               href="https://github.com/movaldivia"
               icon={GitHubIcon}
@@ -109,11 +109,11 @@ function About() {
               Follow on LinkedIn
             </AboutSocialLink>
             <AboutSocialLink
-              href="mailto:mauricio.valdivia.dev@gmail.com"
+              href="mailto:mauricio.valdivia.work@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              mauricio.valdivia.dev@gmail.com
+              mauricio.valdivia.work@gmail.com
             </AboutSocialLink>
           </ul>
         </div>
@@ -123,12 +123,6 @@ function About() {
 }
 
 const projects = [
-  {
-    name: 'WallState',
-    description: 'Invest in US real estate from one dollar and Latam.',
-    link: { href: 'https://www.wallstate.cl/', label: 'wallstate.cl' },
-    logo: logoWallState,
-  },
   {
     name: 'Reity',
     description:
@@ -142,6 +136,12 @@ const projects = [
       'Open source alternative to Google Forms. Create forms easily in less than five minutes.',
     link: { href: 'https://opensurvey.co/', label: 'opensurvey.co' },
     logo: logoOpenSurvey,
+  },
+  {
+    name: 'WallState',
+    description: 'Invest in US real estate from one dollar and Latam.',
+    link: { href: 'https://www.wallstate.cl/', label: 'wallstate.cl' },
+    logo: logoWallState,
   },
 ]
 
@@ -270,15 +270,22 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
+      company: 'Another Acquisition',
+      title: 'Frontend Engineer',
+      logo: logoAnotherAcquisition,
+      start: '2023',
+      end: 'Present',
+    },
+    {
       company: 'WallState',
-      title: 'Co-founder | CTO | Software Engineer ',
+      title: 'Fullstack Engineer ',
       logo: logoWallState,
       start: '2021',
       end: '2023',
     },
     {
       company: 'Abstract',
-      title: 'Software Engineer',
+      title: 'Intership - Jr Engineer',
       logo: logoAbstract,
       start: '2020',
       end: '2021',
@@ -320,36 +327,9 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export default async function Home() {
   return (
     <>
-      <Container className="mt-9">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software engineer and <br /> co-founder.
-          </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Mauricio, a software engineer and entrepreneur. I’m the
-            co-founder and ex-CTO of WallState, where we developed an investment
-            app that permits users to invest from one dollar in real estate.
-          </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com/movaldivia_dev"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://github.com/movaldivia"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/mauricio-valdivia-monzon-85b366147/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-          </div>
-        </div>
-      </Container>
-      <Container className="mt-24 md:mt-28">
+      <About />
+
+      <Container className="mt-24 md:mt-24">
         <Resume />
       </Container>
       {/* <Photos /> */}
@@ -384,7 +364,6 @@ export default async function Home() {
           ))}
         </ul>
       </SimpleLayout>
-      <About />
     </>
   )
 }
