@@ -69,14 +69,15 @@ function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>Hi!</p>
             <p>
-              Hello! I'm Mauricio, a dedicated software engineer with a broad
-              range of programming experience, from crafting simple "Hello
-              World" programs to developing complex smart contracts. I am
-              captivated by the limitless possibilities in programming—all you
-              need is a laptop, an internet connection, and your imagination.
+              Hello! I&apos;m Mauricio, a dedicated software engineer with a
+              broad range of programming experience, from crafting simple
+              &quot;Hello World&quot; programs to developing complex smart
+              contracts. I am captivated by the limitless possibilities in
+              programming—all you need is a laptop, an internet connection, and
+              your imagination.
             </p>
             <p>
-              In my career within the startup ecosystem, I've developed a
+              In my career within the startup ecosystem, I&apos;ve developed a
               comprehensive skill set that covers creating Minimum Viable
               Products (MVPs) with exceptional user experience and interface
               design, robust architecture, efficient DevOps practices, and more.
@@ -84,9 +85,10 @@ function About() {
               scalable and impactful solutions.
             </p>
             <p>
-              I'm actively seeking new challenges and opportunities to innovate.
-              If you're interested in discussing potential collaborations or
-              have a project in mind, feel free to reach out to me via email.
+              I&apos;m actively seeking new challenges and opportunities to
+              innovate. If you&apos;re interested in discussing potential
+              collaborations or have a project in mind, feel free to reach out
+              to me via email.
             </p>
           </div>
         </div>
