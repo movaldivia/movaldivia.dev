@@ -69,20 +69,24 @@ function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>Hi!</p>
             <p>
-              I&apos;m Mauricio, a passionate software engineer specialized in
-              frontend development. I have programmed many different things,
-              from a simple hello world to smart contracts. What I love about
-              programming is that you don&apos;t have limits in your creation.
-              You need a laptop with an internet connection and your own time.
+              Hello! I'm Mauricio, a dedicated software engineer with a broad
+              range of programming experience, from crafting simple "Hello
+              World" programs to developing complex smart contracts. I am
+              captivated by the limitless possibilities in programming—all you
+              need is a laptop, an internet connection, and your imagination.
             </p>
             <p>
-              Over my years of startup environment experience, I have learned a
-              lot of things. I can develop an MVP with great UX/UI, frontend,
-              backend, DevOps, ads, and more. Very customer-focused.
+              In my career within the startup ecosystem, I've developed a
+              comprehensive skill set that covers creating Minimum Viable
+              Products (MVPs) with exceptional user experience and interface
+              design, robust architecture, efficient DevOps practices, and more.
+              My approach is always customer-centric, focused on delivering
+              scalable and impactful solutions.
             </p>
             <p>
-              I&apos;m currently looking for new challenges, so if you want to
-              contact me for anything, please email me!
+              I'm actively seeking new challenges and opportunities to innovate.
+              If you're interested in discussing potential collaborations or
+              have a project in mind, feel free to reach out to me via email.
             </p>
           </div>
         </div>
